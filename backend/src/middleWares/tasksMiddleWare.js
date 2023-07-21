@@ -35,6 +35,14 @@ const validateUpdate = (req, res, next) => {
         return res.status(400).json({
             message: 'O campo "status" é obrigatório.'
         })
+    }else if(body.title == undefined){
+        return res.status(400).json({
+            message: 'O campo "title" é obrigatório.'
+        })
+    }else if(body.title == '') {
+        return res.status(400).json({
+            message: 'O campo "title" é obrigatório.'
+        })
     }
 
     next()
