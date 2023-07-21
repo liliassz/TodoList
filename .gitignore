@@ -1,3 +1,52 @@
-backend/node_modules
-backend/.env
-.vscode
+# Ignorar pasta com dependências do Node.js
+node_modules/
+
+# Ignorar arquivo de variáveis de ambiente local
+.env
+
+# Ignorar arquivos e pastas específicas do editor Visual Studio Code
+.vscode/
+
+# Ignorar arquivos de versão sem comentários (caso não sejam necessários)
+Versao-sem-comentarios
+
+# Ignorar pasta 'repaz' (caso não seja necessária)
+repaz
+
+# Ignorar arquivos de configuração do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos gerados pelo npm ou yarn
+package-lock.json
+yarn.lock
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos temporários
+*.tmp
+*.temp
+
+# Ignorar arquivos de build
+/build
+/dist
+
+# Ignorar arquivos de cache
+.cache/
+
+# Ignorar arquivos de compilação de código
+*.o
+*.obj
+*.dll
+*.exe
+*.bin
+*.so
+*.dylib
+
+# Ignorar arquivos gerados pelo editor de código
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Adicione quaisquer outras pastas ou arquivos que você deseja ignorar abaixo desta linha
