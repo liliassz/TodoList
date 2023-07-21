@@ -5,11 +5,11 @@ require('dotenv').config();
 
 // Cria um pool de conexões com o banco de dados MySQL usando as variáveis de ambiente
 const pool = mysql.createPool({
-  host: process.env.MYSQL_HOST,
-  user: process.env.MYSQL_USER,
-  password: process.env.MYSQL_PASSWORD,
-  database: process.env.MYSQL_DB,
-});
+  host: process.env.MYSQL_HOST, // Obtém o endereço do host do banco de dados a partir de uma variável de ambiente
+  user: process.env.MYSQL_USER, // Obtém o usuário do banco de dados a partir de uma variável de ambiente
+  password: process.env.MYSQL_PASSWORD, // Obtém a senha do banco de dados a partir de uma variável de ambiente
+  database: process.env.MYSQL_DB, // Obtém o nome do banco de dados a partir de uma variável de ambiente
+}); 
 
 // Função assíncrona que será executada imediatamente para estabelecer a conexão com o banco de dados
 (async () => {
