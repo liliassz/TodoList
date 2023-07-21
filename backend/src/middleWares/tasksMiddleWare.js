@@ -1,5 +1,3 @@
-const { response } = require("../app");
-
 const validateBody = (req, res, next) => {
     const { body } = req;
 
