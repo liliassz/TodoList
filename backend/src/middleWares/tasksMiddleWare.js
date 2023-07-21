@@ -23,15 +23,11 @@ const validateUpdate = (req, res, next) => {
         return res.status(400).json({
             message: 'O Id não pode ser alterado.'
         })
-    }
-
-    if(body.created_at || body.created_at == '' ){
+    }else if(body.created_at || body.created_at == '' ){
         return res.status(400).json({
             message: 'A data não pode ser modificada.'
         })
-    }
-
-    if(body.status == undefined){
+    } else if(body.status == undefined){
         return res.status(400).json({
             message: 'O campo "status" é obrigatório.'
         })
