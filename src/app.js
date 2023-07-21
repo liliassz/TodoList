@@ -10,7 +10,7 @@ const app = express();
 
 // Adiciona o middleware para o tratamento de requisições JSON
 app.use(express.json());
-
+ 
 // Adiciona o middleware cors para habilitar a política de mesma origem
 app.use(cors());
 

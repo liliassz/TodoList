@@ -13,7 +13,7 @@ const getAll = async (req, res) => {
         // Em caso de erro, retornar uma resposta com status 500 (Erro interno do servidor)
         return res.status(500).json({ error: 'Erro ao buscar as tarefas.' });
     }
-};
+}; 
 
 // Função assíncrona para criar uma nova tarefa no banco de dados
 const createTask = async (req, res) => {

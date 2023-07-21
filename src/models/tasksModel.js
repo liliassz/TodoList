@@ -33,7 +33,7 @@ const deleteTask = async (id) => {
 
     // Retorna o resultado da operação de exclusão da tarefa
     return removedTask;
-};
+}; 
 
 // Função assíncrona que atualiza uma tarefa existente no banco de dados
 const updateTask = async (id, task) => {
